@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
+body{
+  background: black;
+  color: white;
+}
+
+h1,h4,p,a{
+  color: white;
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+/* .btn {
+  padding: 12px 32px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: rgb(248, 217, 15);
+  color: #222;
+  border: lpx solid #fff;
+  font-weight: 600;
+  cursor:pointer;
+}
+
+.btn-light {
+  
+  background: transparent;
+  color: #fff;
+}
+.btn:hover{
+  background: rgb(255,255,255,0,2);
+  color: #fff;
+  transition: 0.3s;
+} */
+
+.btn {
+  padding: 12px 32px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: rgb(248, 217, 15);
+  color: #222;
+  border: 1px solid #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-light {
+  /* background: rgba(255, 255, 255, 0.2); */
+  background: transparent;
+  color: #fff;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transition: 0.3s;
+}
+
+.option-btn{
+  margin:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* *****************Product Category************************* */
+.fixedbtn {
+  padding: 12px 32px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: rgb(248, 217, 15);
+  color: #222;
+  border: 1px solid #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.fixedbtn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transition: 0.3s;
+}
+.cat-btns{
+  display: inline-block;
+  width:100%;
+}
+
+/* ********************Formik*************************** */
+.btn:disabled{
+  opacity:0.35;
+}
+
+
+/* ***************************Description Product ********************************** */
+.buy-btn{
+  margin:10px;
+}
+
+
+/* *************************************CART***************************************** */
+table,td,tr{
+  text-align:center;
+  /* border: 3px solid; */
+}
+td{
+  max-width: 4px;
+  /* text-align: center; */
+}
+table{
+  text-align:center;
+}
+.qty{
+  font-size:2rem;
+}
+
+
+.checkout-btns{
+  justify-content: space-between;
+  /* padding:0px; */
+  margin: 20px;
+  text-align: center;
+  display: block;
+  
+}
+.checkout-btn{ 
+  display:block;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+
+/* **********************************project.js***************************************/
+.pro-cat-btn:onfocus{
+  background: transparent;
+  color: #fff;
+}
+
+@media screen and (max-width: 740px) {
+  .product-container{
+      display:grid;
+      max-width: 90%;
+      margin: auto;
+      grid-template-columns: 1fr;
+  }
+}
+
+
+.product-heading{
+  border: solid 9px;
+  position: sticky;
+  top :80px;
+  z-index: 100;
+  color:black;
+  background-color: #f8d90f;
+}
+
+
+
+.tr-top-border{
+  border-top: solid;
+  border-color: white;
+}
