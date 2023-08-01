@@ -1,7 +1,7 @@
 import "./SignIn.css"
 import axios from "axios";
 // import {json, useNavigate} from 'react-router-dom'
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 // import LoadingScreen from "../LoadingScreen";
 // import { toast } from "react-toastify";

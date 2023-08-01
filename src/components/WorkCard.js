@@ -1,7 +1,7 @@
 import "./WorkCardStyles.css"
 import { useDispatch } from "react-redux";
 import React, { useEffect } from 'react'
-import { useNavigate } from "react-router-dom";
+
 import { NavLink } from "react-router-dom";
 import { addCart, delCart } from '../redux/action'
 import { useSelector } from 'react-redux'
@@ -33,7 +33,7 @@ const WorkCard = ({data}) => {
         return found ? found.qty : 0;
       };
     
-    const navigate = useNavigate();
+    
 
     useEffect(() => {
         localStorage.setItem("cartItems",JSON.stringify(state))
@@ -89,35 +89,9 @@ const WorkCard = ({data}) => {
         //     <tbody>
         //     <tr>
 
-            {/* <td>
-                                <img src={props.image} alt={props.title} height="200px" width="180px" />
-                                </td>
-                                <td>
-                                <p>{props.title.substring(0,20)}</p>  
-                                </td>
-                                <td>
-                                <p>${props.price}</p>
-                                </td>
-                                <td>
-                                <NavLink to={`/project/${props.id}`} className="btn" id="viewbtn">View</NavLink>  
-                                <button className="btn" onClick={()=>{addProduct(props)}}>Add to Cart</button>
-                                    
-                                </td> */}
+           
 
-                {/* <td>
-                    
-                    <img src={props.image} alt="img1" height="200px" width="200px"/><br/>
-                </td>
-                <td>
-                    <h2 >{props.title.substring(0,20)}</h2><br/>
-                </td>
-                <td>
-                    <h3>${props.price}</h3><br/>
-                </td>
-                <td>        
-                    <NavLink to={`/project/${props.id}`} className="btn" id="viewbtn">View</NavLink>    
-                    <button className="btn" onClick={()=>{addProduct(props)}}>Add to Cart</button>
-                </td> */}
+               
         //     </tr>
         //     </tbody>
         // </table>

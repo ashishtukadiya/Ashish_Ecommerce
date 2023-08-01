@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 import HeroImg2 from '../components/HeroImg2'
 import PricingCard from '../components/PricingCard'
 import Work from '../components/Work'
-import ProductCategoryList from '../components/ProductCategoryList'
+
 import ProductCategories from '../components/ProductCategories'
 // import WorkCard from '../components/WorkCard'
 
